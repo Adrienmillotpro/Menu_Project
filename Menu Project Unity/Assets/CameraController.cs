@@ -9,17 +9,12 @@ public class CameraController : MonoBehaviour
     public float transitionSpeed;
     Transform currentView;
 
-    // Use this for initialization
-    void Start()
-    {
-
-
-    }
+   
 
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             currentView = views[0];
         }
@@ -61,4 +56,31 @@ public class CameraController : MonoBehaviour
         transform.eulerAngles = currentAngle;
 
     }
+
+    public void CameraNumberOne()
+    {
+        currentView = views[1];
+
+    }
+
+    public void CameraNumberTwo()
+    {
+        currentView = views[2];
+
+    }
+
+    public void CameraNumberThree()
+    {
+        currentView = views[3];
+
+    }
+
+    public void CameraNumberFour()
+    {
+        currentView = views[4];
+
+    }
+
+
+
 }
