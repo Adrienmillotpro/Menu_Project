@@ -227,6 +227,8 @@ GameObject:
   - component: {fileID: 165290878}
   - component: {fileID: 165290877}
   - component: {fileID: 165290881}
+  - component: {fileID: 165290883}
+  - component: {fileID: 165290882}
   m_Layer: 0
   m_Name: BlackBoard
   m_TagString: Untagged
@@ -321,6 +323,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraController: {fileID: 1099341713}
+--- !u!114 &165290882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165290876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62707026ff56174d985f565960e8c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Outline_Script: {fileID: 165290883}
+  OutlineWidth: 20
+--- !u!114 &165290883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165290876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.52214503, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &172106190
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +665,8 @@ GameObject:
   - component: {fileID: 641076753}
   - component: {fileID: 641076752}
   - component: {fileID: 641076756}
+  - component: {fileID: 641076757}
+  - component: {fileID: 641076758}
   m_Layer: 0
   m_Name: CubePC
   m_TagString: Untagged
@@ -649,8 +685,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.9993064, z: 1}
+  m_Center: {x: 0, y: 0.00034630953, z: 0}
 --- !u!23 &641076753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -725,6 +761,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraController: {fileID: 1099341713}
+--- !u!114 &641076757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641076751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.55638766, b: 0, a: 1}
+  outlineWidth: 20
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &641076758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641076751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62707026ff56174d985f565960e8c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Outline_Script: {fileID: 641076757}
+  OutlineWidth: 7.3
 --- !u!1 &663463398
 GameObject:
   m_ObjectHideFlags: 0
