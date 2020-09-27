@@ -6,7 +6,10 @@ public class Script1 : MonoBehaviour
 {
     public CameraController CameraController;
     
-    
+    public void Click()
+    {
+        CameraController.CameraNumberZero();
+    }
 
 
     void Update()
@@ -19,7 +22,7 @@ public class Script1 : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
 
-            if (hit.transform.name == "CubePC")
+            if (hit.transform.name == "PcMonitor")
             {
                 
                 if (Input.GetMouseButtonDown(0))

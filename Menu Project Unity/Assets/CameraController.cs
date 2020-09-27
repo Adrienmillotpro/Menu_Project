@@ -81,6 +81,12 @@ public class CameraController : MonoBehaviour
 
     }
 
+    public void CameraNumberZero()
+    {
+        currentView = views[0];
+
+    }
+
 
 
 }
